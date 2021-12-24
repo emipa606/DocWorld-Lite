@@ -1,6 +1,5 @@
-![The Doctor](https://cdn.discordapp.com/attachments/220997547345313793/768080311526752256/v20.gif)  
 ========
-_DocWorld_ is one of the most ambitious efforts to reorganize RimWorld and RimWorld mods into a cleaner, better functioning, and intuitive system. This mod patches hundreds of other mods **and can be used without any other mod**. SCRUB your Rim and you will not regret it.
+_DocWorld Lite - is a fork of the wonderfull Docworld mod. It is smaller in scope and more focused, as it doesn't do tab-sorting or original content, but focus on the mod integration and compatibility patches.
 
 ### Important Info:
 [DocWorld Wiki](https://github.com/DrZhivago1/DocWorld/wiki)
