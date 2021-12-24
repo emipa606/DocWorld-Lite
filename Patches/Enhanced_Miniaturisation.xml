@@ -131,27 +131,6 @@
             </li>
         </operations>
     </Operation>
-    <!--OrbitalTradeBeacon-->
-    <Operation Class="PatchOperationSequence">
-        <success>Always</success>
-        <operations>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName = "OrbitalTradeBeacon"][not(minifiedDef)]</xpath>
-                <value>
-                    <minifiedDef>MinifiedThing</minifiedDef>
-                    <thingCategories>
-                        <li>BuildingsMisc</li>
-                    </thingCategories>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName = "OrbitalTradeBeacon"]/statBases</xpath>
-                <value>
-                    <Mass>10</Mass>
-                </value>
-            </li>
-        </operations>
-    </Operation>
     <!--PodLauncher-->
     <Operation Class="PatchOperationSequence">
         <success>Always</success>
@@ -295,30 +274,6 @@
                 <xpath>/Defs/ThingDef[defName = "WoodFiredGenerator"]/statBases</xpath>
                 <value>
                     <Mass>150</Mass>
-                </value>
-            </li>
-        </operations>
-    </Operation>
-    <!--BiofuelRefinery, FabricationBench, HiTechResearchBench-->
-    <Operation Class="PatchOperationSequence">
-        <success>Always</success>
-        <operations>
-            <li Class="PatchOperationReplace">
-                <xpath>/Defs/ThingDef[defName = "BiofuelRefinery" or defName = "FabricationBench" or defName = "HiTechResearchBench"]/minifiedDef</xpath>
-                <value>
-                    <minifiedDef>MinifiedThing</minifiedDef>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName = "BiofuelRefinery" or defName = "FabricationBench" or defName = "HiTechResearchBench"]/thingCategories[not(BuildingsProduction)]</xpath>
-                <value>
-                    <li>BuildingsProduction</li>
-                </value>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName = "BiofuelRefinery" or defName = "FabricationBench" or defName = "HiTechResearchBench"]/statBases[not(Mass)]</xpath>
-                <value>
-                    <Mass>100</Mass>
                 </value>
             </li>
         </operations>
@@ -511,8 +466,8 @@
             </operations>
         </match>
     </Operation>
-
-    <!--==========
+	
+	<!--==========
     Genetic Rim
     ==========-->
 
@@ -537,99 +492,6 @@
                     <xpath>/Defs/ThingDef[defName="GR_CryostabilizedEngine"]/statBases</xpath>
                     <value>
                         <Mass>300</Mass>
-                    </value>
-                </li>
-            </operations>
-        </match>
-    </Operation>
-
-    <!--==========
-    High Tech Laboratory Facilities (Continued)
-    ==========-->
-
-    <!--LabStation, LabTerminal-->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>High Tech Laboratory Facilities (Continued)</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LabStation" or defName="LabTerminal"]</xpath>
-                    <value>
-                        <minifiedDef>MinifiedThing</minifiedDef>
-                        <thingCategories>
-                            <li>BuildingsMisc</li>
-                        </thingCategories>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="LabStation" or defName="LabTerminal"]/statBases</xpath>
-                    <value>
-                        <Mass>20</Mass>
-                    </value>
-                </li>
-            </operations>
-        </match>
-    </Operation>
-
-    <!--==========
-    Medical Training
-    ==========-->
-
-    <!--IF_MeditrainTable-->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Medical Training</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName = "IF_MeditrainTable"]</xpath>
-                    <value>
-                        <minifiedDef>MinifiedThing</minifiedDef>
-                        <thingCategories>
-                            <li>BuildingsMisc</li>
-                        </thingCategories>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName = "IF_MeditrainTable"]/statBases</xpath>
-                    <value>
-                        <Mass>20</Mass>
-                    </value>
-                </li>
-            </operations>
-        </match>
-    </Operation>
-
-    <!--==========
-    Repair Workbench
-    ==========-->
-
-    <!--ElectricTableRepair-->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Repair Workbench</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ElectricTableRepair"]</xpath>
-                    <value>
-                        <minifiedDef>MinifiedThing</minifiedDef>
-                        <thingCategories>
-                            <li>BuildingsMisc</li>
-                        </thingCategories>
-                    </value>
-                </li>
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="ElectricTableRepair"]/statBases</xpath>
-                    <value>
-                        <Mass>20</Mass>
                     </value>
                 </li>
             </operations>
@@ -667,31 +529,6 @@
                     <xpath>/Defs/ThingDef[defName="RPGrapheneWindTurbine"]/statBases</xpath>
                     <value>
                         <Mass>500</Mass>
-                    </value>
-                </li>
-            </operations>
-        </match>
-    </Operation>
-
-    <!--==========
-    Simple Chains: Lumber
-    ==========-->
-
-    <!--Owl_CarpentersTrestle, Owl_WoodDryingRack-->
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Simple Chains: Lumber</li>
-        </mods>
-        <match Class="PatchOperationSequence">
-            <success>Always</success>
-            <operations>
-                <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="Owl_CarpentersTrestle" or defName="Owl_WoodDryingRack"]</xpath>
-                    <value>
-                        <minifiedDef>MinifiedThing</minifiedDef>
-                        <thingCategories>
-                            <li>BuildingsMisc</li>
-                        </thingCategories>
                     </value>
                 </li>
             </operations>

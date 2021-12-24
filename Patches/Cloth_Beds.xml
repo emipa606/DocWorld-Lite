@@ -7,10 +7,8 @@
 
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <!--#clothbeds-->
-            <li>RealBeds</li>
-            <li>RealBeds-Easy</li>
-            <li>Soft Beds</li>
+            <li>Beds Need Bedding</li>
+            <li>Modern Bed</li>
             <li>[T] MoreBedsCloth</li>
             <li>[JPT] Soft Warm Beds</li>
         </mods>
@@ -99,12 +97,10 @@
         </mods>
         <match Class="PatchOperationFindMod">
             <mods>
-                <!--#clothbeds-->
-                <li>RealBeds</li>
-                <li>RealBeds-Easy</li>
-                <li>Soft Beds</li>
-                <li>[T] MoreBedsCloth</li>
-                <li>[JPT] Soft Warm Beds</li>
+            <li>Beds Need Bedding</li>
+            <li>Modern Bed</li>
+            <li>[T] MoreBedsCloth</li>
+            <li>[JPT] Soft Warm Beds</li>
             </mods>
             <nomatch Class="PatchOperationSequence">
                 <success>Always</success>
@@ -149,82 +145,6 @@
     </Operation>
 
     <!--==========
-    Rim Job World
-    ==========-->
-
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>RimJobWorld</li>
-        </mods>
-        <match Class="PatchOperationFindMod">
-            <mods>
-                <!--#clothbeds-->
-                <li>RealBeds</li>
-                <li>RealBeds-Easy</li>
-                <li>Soft Beds</li>
-                <li>[T] MoreBedsCloth</li>
-                <li>[JPT] Soft Warm Beds</li>
-            </mods>
-            <nomatch Class="PatchOperationSequence">
-                <success>Always</success>
-                <operations>
-                    <li Class="PatchOperationConditional">                        <!--RJW_Bed-->
-                        <xpath>/Defs/ThingDef[defName="RJW_Bed"]/costList</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="RJW_Bed"]/costList</xpath>
-                            <value>
-                                <Cloth>12</Cloth>
-                            </value>
-                        </match>
-                        <nomatch Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="RJW_Bed"]</xpath>
-                            <value>
-                                <costList>
-                                    <Cloth>12</Cloth>
-                                </costList>
-                            </value>
-                        </nomatch>
-                    </li>
-                    <li Class="PatchOperationConditional">                        <!--RJW_DoubleBed-->
-                        <xpath>/Defs/ThingDef[defName="RJW_DoubleBed"]/costList</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="RJW_DoubleBed"]/costList</xpath>
-                            <value>
-                                <Cloth>18</Cloth>
-                            </value>
-                        </match>
-                        <nomatch Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="RJW_DoubleBed"]</xpath>
-                            <value>
-                                <costList>
-                                    <Cloth>18</Cloth>
-                                </costList>
-                            </value>
-                        </nomatch>
-                    </li>
-                    <li Class="PatchOperationConditional">                        <!--RJW_RoyalBed-->
-                        <xpath>/Defs/ThingDef[defName="RJW_RoyalBed"]/costList</xpath>
-                        <match Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="RJW_RoyalBed"]/costList</xpath>
-                            <value>
-                                <Cloth>24</Cloth>
-                            </value>
-                        </match>
-                        <nomatch Class="PatchOperationAdd">
-                            <xpath>/Defs/ThingDef[defName="RJW_RoyalBed"]</xpath>
-                            <value>
-                                <costList>
-                                    <Cloth>24</Cloth>
-                                </costList>
-                            </value>
-                        </nomatch>
-                    </li>
-                </operations>
-            </nomatch>
-        </match>
-    </Operation>
-
-    <!--==========
     RIMkea
     ==========-->
 
@@ -234,12 +154,10 @@
         </mods>
         <match Class="PatchOperationFindMod">
             <mods>
-                <!--#clothbeds-->
-                <li>RealBeds</li>
-                <li>RealBeds-Easy</li>
-                <li>Soft Beds</li>
-                <li>[T] MoreBedsCloth</li>
-                <li>[JPT] Soft Warm Beds</li>
+            <li>Beds Need Bedding</li>
+            <li>Modern Bed</li>
+            <li>[T] MoreBedsCloth</li>
+            <li>[JPT] Soft Warm Beds</li>
             </mods>
             <nomatch Class="PatchOperationSequence">
                 <success>Always</success>
@@ -282,7 +200,7 @@
             </nomatch>
         </match>
     </Operation>
-
+   
     <!--==========
     Vanilla Furniture Expanded
     ==========-->
@@ -293,12 +211,10 @@
         </mods>
         <match Class="PatchOperationFindMod">
             <mods>
-                <!--#clothbeds-->
-                <li>RealBeds</li>
-                <li>RealBeds-Easy</li>
-                <li>Soft Beds</li>
-                <li>[T] MoreBedsCloth</li>
-                <li>[JPT] Soft Warm Beds</li>
+            <li>Beds Need Bedding</li>
+            <li>Modern Bed</li>
+            <li>[T] MoreBedsCloth</li>
+            <li>[JPT] Soft Warm Beds</li>
             </mods>
             <nomatch Class="PatchOperationSequence">
                 <success>Always</success>
@@ -386,12 +302,10 @@
         </mods>
         <match Class="PatchOperationFindMod">
             <mods>
-                <!--#clothbeds-->
-                <li>RealBeds</li>
-                <li>RealBeds-Easy</li>
-                <li>Soft Beds</li>
-                <li>[T] MoreBedsCloth</li>
-                <li>[JPT] Soft Warm Beds</li>
+            <li>Beds Need Bedding</li>
+            <li>Modern Bed</li>
+            <li>[T] MoreBedsCloth</li>
+            <li>[JPT] Soft Warm Beds</li>
             </mods>
             <nomatch Class="PatchOperationSequence">
                 <success>Always</success>

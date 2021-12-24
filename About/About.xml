@@ -1,19 +1,15 @@
 <ModMetaData>
 
-	<name>DocWorld</name>
-	<author>Dr_Zhivago</author>
+	<name>DocWorld Lite</name>
+	<author>Leugimimi</author>
 	<url>https://github.com/DrZhivago1/DocWorld</url>
 	<supportedVersions>
-		<li>1.1</li>
-		<li>1.2</li>
+		<li>1.3</li>
 	</supportedVersions>
-	<packageId>drzhivago.docworld</packageId>
+	<packageId>docworld.lite</packageId>
 	<description>
 One of the most ambitious efforts to reorganize RimWorld/Mods into a cleaner, better functioning, and intuitive system. This mod patches, fixes, and adds content to many mods (including but not limited to plain old vanilla RimWorld). &lt;size=24&gt;Features&lt;/size&gt;
-    * New Architect tabs and organizes Architect menu
-    * New drop down menus
     * Balances recipes for various items
-    * Underground power conduits
     * Enhances miniaturisation abilities
     * Increased "stuffable" items
     * Lights are now more efficient with power usage
@@ -25,30 +21,20 @@ Each setting can now be disabled in the mod settings menu! Restart required for 
 
 [Link to GitHub]https://github.com/DrZhivago1/DocWorld/releases
 
-[Link to Ludeon] https://ludeon.com/forums/index.php?topic=47165.msg447416#msg447416
-
-[The Doctor's World mod collection] https://steamcommunity.com/sharedfiles/filedetails/?id=1568763074
     
 	</description>
 
 	<modDependencies>
-		<li>
-			<packageId>dninemfive.d9framework</packageId>
-			<displayName>D9 Framework</displayName>
-			<downloadUrl>https://github.com/dninemfive/d9framework/releases</downloadUrl>
-			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2037445541</steamWorkshopUrl>
-		</li>
 	</modDependencies>
 
 	<incompatibleWith>
 		<li>Oreno.VFEFarming.DubsBadHygiene</li>
-		<li>Owlchemist.UndergroundPowerConduits</li>
-		<li>Primus.FunctionalProps</li>
-		<li>Wemd.MaterialsForCoolers</li>
 		<li>dame.scleatherufpatch</li>
 	</incompatibleWith>
 
 	<loadAfter>
+		<li>cucumpear.storage</li>
+		<li>jamaicancastle.RF.fertilefields</li>
 		<li>HH.MaterialsForToolCabinet</li>
 		<li>JPT.OpenTheWindows</li>
 		<li>LoonyLadle.RimWorld.Bones</li>

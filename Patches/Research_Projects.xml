@@ -1,23 +1,286 @@
 ﻿<Patch>
   <!--This file will contain all patches that replace/change research requirements for Vanilla and Mods-->
 
+  
   <!--==========
-    Aquarium (Continued)
+    DDA Security and More {Doors Expanded}
     ==========-->
 
-  <!--Allow you to feed your pet fish in Medieval era-->
+  <!--Replace research for blast doors from DDA Security with Doors Expanded research-->
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>Aquarium (Continued)</li>
+      <li>DDA Security and More</li>
     </mods>
-    <match Class="PatchOperationReplace">
-      <xpath>/Defs/ResearchProjectDef[defName="AQGelatin"]/techLevel</xpath>
-      <value>
-        <techLevel>Medieval</techLevel>
-      </value>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>Doors Expanded</li>
+        <li>Doors Expanded (Dev)</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="Blastdoor"]/researchPrerequisites</xpath>
+            <value>
+              <researchPrerequisites>
+                <li>ProjectHeron_BlastDoors</li>
+              </researchPrerequisites>
+            </value>
+          </li>
+          <li Class="PatchOperationRemove">
+            <xpath>/Defs/ResearchProjectDef[defName="BlastDoor"]</xpath>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  
+  
+  <!--==========
+    Glass+Lights {Vanilla Furniture Expanded - Spacer Module, Raise The Roof, Rimatomics}
+    ==========-->
+
+  <!--Allow transparent roofing to be research after glassworks-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Glass+Lights</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>Raise The Roof 1.3</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="TransparentRoofing"]/prerequisites</xpath>
+            <value>
+              <prerequisites>
+                <li>GlassworksResearch</li>
+              </prerequisites>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="TransparentRoofing"]/techLevel</xpath>
+            <value>
+              <techLevel>Medieval</techLevel>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  
+  
+  <!--==========
+    Vanilla Armour Expanded {Dragons Not Included}
+    ==========-->
+
+  <!--Armor requires new research -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Armour Expanded</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>[O21] Dragons Not Included</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[@ParentName="ApparelMakeableBase"]/recipeMaker/researchPrerequisite[text()="O21_DNI_SimpleApparel"]</xpath>
+            <value>
+              <researchPrerequisite>VAE_LeatherTanning</researchPrerequisite>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="PlateArmor"]/prerequisites/li[text()="O21_DNI_SimpleApparel"]</xpath>
+            <value>
+              <li>VAE_LeatherTanning</li>
+            </value>
+          </li>
+          <li Class="PatchOperationRemove">
+            <xpath>/Defs/ResearchProjectDef[defName="O21_DNI_SimpleApparel"]</xpath>
+          </li>
+        </operations>
+      </match>
     </match>
   </Operation>
 
+  <!--==========
+    Vanilla Factions Expanded - Medieval {Dragons Not Included, Medieval Madness: Tools of the Trade}
+    ==========-->
+
+  <!--VFE-M crossbow requires new research -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Medieval</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>Medieval Madness: Tools of the Trade</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="VFEM_Bow_HeavyCrossbow"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite>HeavyCrossbows</researchPrerequisite>
+            </value>
+          </li>
+          <li Class="PatchOperationRemove">
+            <xpath>/Defs/ResearchProjectDef[defName="VFEM_HeavyCrossbow"]</xpath>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+
+  <!--Armor requires new research -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Medieval</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>[O21] Dragons Not Included</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="VFEM_Apparel_PlateHelmetHeavy" or defName="VFEM_Apparel_PlateArmorHeavy"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite>O21_DNI_MetalArmour</researchPrerequisite>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+
+  <!--==========
+    Vanilla Factions Expanded - Vikings | Vanilla Factions Expanded - Vikings {Dragons Not Included}
+    ==========-->
+
+  <!--Armor requires new research -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Factions Expanded - Vikings</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>[O21] Dragons Not Included</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[defName="VFEV_Apparel_GuardianHelmet" or defName="VFEV_Apparel_GuardianArmor"]/recipeMaker/researchPrerequisite</xpath>
+            <value>
+              <researchPrerequisite>O21_DNI_MetalArmour</researchPrerequisite>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  
+  
+  <!--==========
+    Vanilla Furniture Expanded - Spacer Module {[WD] Reinforced Doors}
+    ==========-->
+
+  <!--Lock reinforced doors behind tech required for reinforced walls-->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Furniture Expanded - Spacer Module</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>[WD] Reinforced Doors</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="WDReinforcedDoor"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/ThingDef[defName="WDReinforcedDoor"]/researchPrerequisites</xpath>
+              <value>
+                <li>SpacerFurniture</li>
+              </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>/Defs/ThingDef[defName="WDReinforcedDoor"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>SpacerFurniture</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </li>
+          <li Class="PatchOperationConditional">
+            <xpath>/Defs/ThingDef[defName="WDReinforcedAutodoor"]/researchPrerequisites</xpath>
+            <match Class="PatchOperationAdd">
+              <xpath>/Defs/ThingDef[defName="WDReinforcedAutodoor"]/researchPrerequisites</xpath>
+              <value>
+                <li>SpacerFurniture</li>
+              </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+              <xpath>/Defs/ThingDef[defName="WDReinforcedAutodoor"]</xpath>
+              <value>
+                <researchPrerequisites>
+                  <li>Autodoors</li>
+                  <li>SpacerFurniture</li>
+                </researchPrerequisites>
+              </value>
+            </nomatch>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+
+  <!--==========
+    Vanilla Weapons Expanded {Dragons Not Included}
+    ==========-->
+
+  <!--Armor requires new research -->
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Weapons Expanded</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <mods>
+        <li>[O21] Dragons Not Included</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ResearchProjectDef[defName="O21_DNI_ResonanceGuns"]/prerequisites/li[text()="O21_DNI_FlintlockGuns"]</xpath>
+            <value>
+              <li>VWE_Gunpowder</li>
+            </value>
+          </li>
+          <li Class="PatchOperationReplace">
+            <xpath>/Defs/ThingDef[@ParentName="O21BaseMakeableGunMedieval"]/recipeMaker/researchPrerequisite[text()="O21_DNI_FlintlockGuns"]</xpath>
+            <value>
+              <researchPrerequisite>VWE_Gunpowder</researchPrerequisite>
+            </value>
+          </li>
+          <li Class="PatchOperationRemove">
+            <xpath>/Defs/ResearchProjectDef[defName="O21_DNI_ResonanceGuns"]/prerequisites/li[text()="O21_DNI_FlintlockGuns"] | /Defs/ResearchProjectDef[defName="O21_DNI_FlintlockGuns"]</xpath>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+  
   <!--==========
     Dragons Not Included
     ==========-->
@@ -62,7 +325,7 @@
   <!--Put Extended Storage behind Complex Furniture Tech (excluding food basket and wooden pallet) -->
   <Operation Class="PatchOperationFindMod">
     <mods>
-      <li>Extended Storage</li>
+      <li>Extended Storage (Continued</li>
     </mods>
     <match Class="PatchOperationAdd">
       <xpath>/Defs/ThingDef[defName="Storage_HazMatContainer" or defName="Storage_FabricHamper" or defName="Storage_Locker" or defName="Storage_MedicineCabinet" or defName="Storage_Skip" or defName="Storage_TrayRack"]</xpath>
@@ -79,10 +342,10 @@
     ==========-->
 
   <!--Allow all terraforming in Medieval era-->
-  <Operation Class="D9Framework.PatchOperationFindPackage">
-    <packageIds>
-      <li>jamaicancastle.RF.fertilefields</li>
-    </packageIds>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Fertile Fields [1.1]</li>
+    </mods>
     <match Class="PatchOperationReplace">
       <xpath>/Defs/ResearchProjectDef[defName="RFF_Terraforming"]/techLevel</xpath>
       <value>
@@ -308,14 +571,6 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Smokepit"]</xpath>
-          <value>
-            <researchPrerequisites>
-              <li>Pemmican</li>
-            </researchPrerequisites>
-          </value>
-        </li>
-        <li Class="PatchOperationAdd">
           <xpath>/Defs/ThingDef[defName="SmokeHouse"]</xpath>
           <value>
             <researchPrerequisites>
@@ -324,9 +579,25 @@
             </researchPrerequisites>
           </value>
         </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="Smokepit"]/researchPrerequisites</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Smokepit"]/researchPrerequisites</xpath>
+            <value>
+              <li>Pemmican</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="Smokepit"]</xpath>
+            <value>
+              <researchPrerequisites>
+                <li>Pemmican</li>
+              </researchPrerequisites>
+            </value>
+          </nomatch>
+        </li>
       </operations>
     </match>
   </Operation>
-
 
 </Patch>

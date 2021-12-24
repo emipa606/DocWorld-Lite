@@ -5,33 +5,6 @@
     Vanilla
     ==========-->
 
-   <!--Patch Vanilla flooring if Concrete exists-->
-   <Operation Class="PatchOperationConditional">
-      <xpath>/Defs/ThingDef[defName = "DZ_Concrete"]</xpath>
-      <match Class="PatchOperationSequence">
-         <success>Always</success>
-         <operations>
-            <li Class="PatchOperationReplace">
-               <xpath>/Defs/TerrainDef[defName = "Concrete"]/costList</xpath>
-               <value>
-                  <costList>
-                     <DZ_Concrete>5</DZ_Concrete>
-                  </costList>
-               </value>
-            </li>
-            <li Class="PatchOperationReplace">
-               <xpath>/Defs/TerrainDef[defName = "PavedTile"]/costList</xpath>
-               <value>
-                  <costList>
-                     <Steel>1</Steel>
-                     <DZ_Concrete>5</DZ_Concrete>
-                  </costList>
-               </value>
-            </li>
-         </operations>
-      </match>
-   </Operation>
-
    <!--Add a melting mechanoid recipe for low tech colonies-->
    <Operation Class="PatchOperationSequence">
       <success>Always</success>
@@ -58,41 +31,15 @@
       </operations>
    </Operation>
 
-   <!--Allow butcher spot and crafting spot to be placed on furniture-->
-   <Operation Class="PatchOperationSequence">
-      <success>Always</success>
-      <operations>
-         <li Class="PatchOperationReplace">
-            <xpath>/Defs/ThingDef[defName="ButcherSpot" or defName="CraftingSpot"]/altitudeLayer</xpath>
-            <value>
-               <altitudeLayer>MoteOverhead</altitudeLayer>
-            </value>
-         </li>
-         <li Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="ButcherSpot" or defName="CraftingSpot"]/building</xpath>
-            <value>
-               <isEdifice>false</isEdifice>
-               <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
-            </value>
-         </li>
-         <li Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="ButcherSpot" or defName="CraftingSpot"]</xpath>
-            <value>
-               <clearBuildingArea>false</clearBuildingArea>
-            </value>
-         </li>
-      </operations>
-   </Operation>
-
    <!--==========
     Concrete Walls
     ==========-->
 
    <!--Use concrete from other mods-->
-   <Operation Class="D9Framework.PatchOperationFindPackage">
-      <packageIds>
-         <li>Porohkun.ConcreteWalls</li>
-      </packageIds>
+   <!--Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Concrete Walls</li>
+      </mods>
       <match Class="PatchOperationSequence">
          <success>Always</success>
          <operations>
@@ -134,17 +81,17 @@
             </li>
          </operations>
       </match>
-   </Operation>
+   </Operation-->
 
    <!--==========
     Expanded Materials - Metals
     ==========-->
 
    <!--Return concrete flooring to normal-->
-   <Operation Class="D9Framework.PatchOperationFindPackage">
-      <packageIds>
-         <li>Argon.VMEu</li>
-      </packageIds>
+   <!--Operation Class="PatchOperationFindMod">
+      <mods>
+         <li>Expanded Materials - Metals</li>
+      </mods>
       <match Class="PatchOperationSequence">
          <success>Always</success>
          <operations>
@@ -154,7 +101,7 @@
             </li>
          </operations>
       </match>
-   </Operation>
+   </Operation-->
 
    <!--==========
     Expanded Roofing
@@ -182,7 +129,7 @@
     Fish Industry
     ==========-->
 
-   <!--Allow rotation of aquaculture basin (microfungus texture edited due to this), Stuff the pier-->
+   <!--Allow rotation of aquaculture basin (microfungus texture edited due to this), -->
    <Operation Class="PatchOperationFindMod">
       <mods>
          <li>FishIndustry</li>
@@ -194,17 +141,6 @@
                <xpath>/Defs/ThingDef[defName="AquacultureBasin"]/rotatable</xpath>
                <value>
                   <rotatable>true</rotatable>
-               </value>
-            </li>
-            <li Class="PatchOperationReplace">
-               <xpath>/Defs/ThingDef[defName="FishingPier"]/costList</xpath>
-               <value>
-                  <costStuffCount>200</costStuffCount>
-                  <stuffCategories>
-                     <li>Stony</li>
-                     <li>Metallic</li>
-                     <li>Woody</li>
-                  </stuffCategories>
                </value>
             </li>
          </operations>
@@ -219,6 +155,7 @@
    <Operation Class="PatchOperationFindMod">
       <mods>
          <li>Fishing Nets</li>
+         <li>Fishing Nets (Continued)</li>
       </mods>
       <match Class="PatchOperationSequence">
          <operations>
@@ -383,6 +320,7 @@
                            <li>Chemfuel</li>
                         </thingDefs>
                      </fuelFilter>
+					 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
                   </li>
                </value>
             </li>
@@ -397,6 +335,7 @@
                            <li>Chemfuel</li>
                         </thingDefs>
                      </fuelFilter>
+					 <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
                   </li>
                </value>
             </li>
@@ -420,36 +359,6 @@
    </Operation>
 
    <!--==========
-    Lulu's Bones and Chitin
-    ==========-->
-
-   <!--Bring Lulu's bones closer to Vanilla wood stats-->
-   <Operation Class="PatchOperationFindMod">
-      <mods>
-         <li>Lulu's Bones and Chitin</li>
-      </mods>
-      <match Class="PatchOperationReplace">
-         <xpath>/Defs/ThingDef[defName = "LuluBones_Bone"]/statBases</xpath>
-         <value>
-            <statBases>
-               <MarketValue>1.2</MarketValue>
-               <MaxHitPoints>150</MaxHitPoints>
-               <Mass>0.4</Mass>
-               <Flammability>1.0</Flammability>
-               <DeteriorationRate>0.5</DeteriorationRate>
-               <StuffPower_Armor_Sharp>0.45</StuffPower_Armor_Sharp>
-               <StuffPower_Armor_Blunt>0.50</StuffPower_Armor_Blunt>
-               <StuffPower_Armor_Heat>0.50</StuffPower_Armor_Heat>
-               <StuffPower_Insulation_Cold>4</StuffPower_Insulation_Cold>
-               <StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
-               <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
-               <BluntDamageMultiplier>0.85</BluntDamageMultiplier>
-            </statBases>
-         </value>
-      </match>
-   </Operation>
-
-   <!--==========
     Mamuffalo
     ==========-->
 
@@ -463,27 +372,6 @@
          <value>
             <leatherDef>Leather_Bluefur</leatherDef>
          </value>
-      </match>
-   </Operation>
-
-   <!--==========
-    Open The Windows
-    ==========-->
-
-   <!--Allow regular windows to be made of stone-->
-   <Operation Class="PatchOperationFindMod">
-      <mods>
-         <li>[JPT] Open The Windows</li>
-      </mods>
-      <match Class="PatchOperationSequence">
-         <operations>
-            <li Class="PatchOperationAdd">
-               <xpath>/Defs/ThingDef[defName="OpenWindow" or defName="LargeOpenWindow"]/stuffCategories</xpath>
-               <value>
-                  <li>Stony</li>
-               </value>
-            </li>
-         </operations>
       </match>
    </Operation>
 
@@ -690,7 +578,7 @@
    <!--Minor edits, allow cover-->
    <Operation Class="PatchOperationFindMod">
       <mods>
-         <li>Roof Support 1.1</li>
+         <li>Roof Support 1.3</li>
       </mods>
       <match Class="PatchOperationSequence">
          <success>Always</success>
@@ -779,255 +667,6 @@
    </Operation>
 
    <!--==========
-    Simple Chains: Leather
-    ==========-->
-
-   <!--Increase Max Capacity of tanning vat
-   <Operation Class="PatchOperationFindMod">
-      <mods>
-         <li>Simple Chains: Leather</li>
-      </mods>
-      <match Class="PatchOperationReplace">
-         <xpath>/Defs/ThingDef[defName="Owl_TanningVat"]/comps/li[@Class="UniversalFermenter.CompProperties_UniversalFermenter"]/processes//maxCapacity</xpath>
-         <value>
-            <maxCapacity>150</maxCapacity>
-         </value>
-      </match>
-   </Operation>-->
-
-   <!--Vanilla animal leather replacement-->
-   <Operation Class="PatchOperationFindMod">
-      <mods>
-         <li>Simple Chains: Leather</li>
-      </mods>
-      <match Class="PatchOperationSequence">
-         <success>Always</success>
-         <operations>
-            <!-- Replace leather drops with generics where appropriate -->
-            <li Class="PatchOperationReplace">
-               <xpath>/Defs/ThingDef/race/leatherDef[text()="Leather_GuineaPig"]</xpath>
-               <value>
-                  <leatherDef>Hide_SoftPelt</leatherDef>
-               </value>
-            </li>
-            <!-- Remove unused leather -->
-            <li Class="PatchOperationRemove">
-               <xpath>/Defs/ThingDef[defName="Leather_GuineaPig"]/*/..</xpath>
-            </li>
-         </operations>
-      </match>
-   </Operation>
-
-   <!--==========
-    Simple Chains: Lumber
-    ==========-->
-
-   <!-- Make green lumber stats in-line with Vanilla lumber -->
-   <Operation Class="PatchOperationFindMod">
-      <mods>
-         <li>Simple Chains: Lumber</li>
-      </mods>
-      <match Class="PatchOperationConditional">
-         <xpath>/Defs/ThingDef[defName="Owl_GreenLumber"]/statBases/BluntDamageMultiplier</xpath>
-         <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="Owl_GreenLumber"]/statBases</xpath>
-            <value>
-               <StuffPower_Armor_Sharp>0.50</StuffPower_Armor_Sharp>
-               <StuffPower_Armor_Blunt>0.50</StuffPower_Armor_Blunt>
-               <StuffPower_Armor_Heat>0.45</StuffPower_Armor_Heat>
-               <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
-               <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-               <SharpDamageMultiplier>0.35</SharpDamageMultiplier>
-               <BluntDamageMultiplier>0.85</BluntDamageMultiplier>
-            </value>
-         </nomatch>
-      </match>
-   </Operation>
-
-   <!--==========
-    Simple Chains: Steel
-    ==========-->
-
-   <!--Create Bulk Recipes for steel-->
-   <Operation Class="PatchOperationFindMod">
-      <mods>
-         <li>Simple Chains: Steel</li>
-      </mods>
-      <match Class="PatchOperationSequence">
-         <success>Always</success>
-         <operations>
-            <li Class="PatchOperationAdd">
-               <xpath>/Defs</xpath>
-               <value>
-
-                  <RecipeDef>
-                     <defName>Owl_RefineSteel1000</defName>
-                     <label>refine 1000 steel</label>
-                     <description>Make a batch of steel using raw iron ore.</description>
-                     <jobString>Refining steel from iron ore.</jobString>
-                     <effectWorking>Smelt</effectWorking>
-                     <soundWorking>Recipe_Smelt</soundWorking>
-                     <workAmount>10000</workAmount>
-                     <workSpeedStat>SmeltingSpeed</workSpeedStat>
-                     <workSkillLearnFactor>0.25</workSkillLearnFactor>
-                     <targetCountAdjustment>750</targetCountAdjustment>
-                     <allowMixingIngredients>false</allowMixingIngredients>
-                     <ingredients>
-                        <li>
-                           <filter>
-                              <thingDefs />
-                           </filter>
-                           <count>250</count>
-                        </li>
-                        <li>
-                           <filter>
-                              <thingDefs>
-                                 <li>Owl_Iron</li>
-                              </thingDefs>
-                           </filter>
-                           <count>750</count>
-                        </li>
-                     </ingredients>
-                     <fixedIngredientFilter>
-                        <thingDefs>
-                           <li>Owl_Iron</li>
-                        </thingDefs>
-                     </fixedIngredientFilter>
-                     <products>
-                        <Steel>1000</Steel>
-                     </products>
-                     <recipeUsers>
-                        <li>ElectricSmelter</li>
-                     </recipeUsers>
-                  </RecipeDef>
-
-                  <RecipeDef>
-                     <defName>Owl_RefineSteel100</defName>
-                     <label>refine 100 steel</label>
-                     <description>Make a batch of steel using raw iron ore.</description>
-                     <jobString>Refining steel from iron ore.</jobString>
-                     <effectWorking>Smelt</effectWorking>
-                     <soundWorking>Recipe_Smelt</soundWorking>
-                     <workAmount>5000</workAmount>
-                     <workSpeedStat>SmeltingSpeed</workSpeedStat>
-                     <workSkillLearnFactor>0.25</workSkillLearnFactor>
-                     <targetCountAdjustment>75</targetCountAdjustment>
-                     <allowMixingIngredients>false</allowMixingIngredients>
-                     <ingredients>
-                        <li>
-                           <filter>
-                              <thingDefs />
-                           </filter>
-                           <count>25</count>
-                        </li>
-                        <li>
-                           <filter>
-                              <thingDefs>
-                                 <li>Owl_Iron</li>
-                              </thingDefs>
-                           </filter>
-                           <count>75</count>
-                        </li>
-                     </ingredients>
-                     <fixedIngredientFilter>
-                        <thingDefs>
-                           <li>Owl_Iron</li>
-                        </thingDefs>
-                     </fixedIngredientFilter>
-                     <products>
-                        <Steel>100</Steel>
-                     </products>
-                     <recipeUsers>
-                        <li>ElectricSmelter</li>
-                     </recipeUsers>
-                  </RecipeDef>
-
-               </value>
-            </li>
-         </operations>
-      </match>
-   </Operation>
-
-  <!--Add coal/charcoal to steel smelting list-->
-  <!--Coal-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Simple Chains: Steel</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <success>Always</success>
-      <operations>
-        <li Class="PatchOperationTest">
-          <xpath>/Defs/ThingDef[defName="DZ_Coal"]</xpath>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/*[self::RecipeDef[defName="Owl_RefineSteel100" or defName="Owl_RefineSteel1000"]]
-					//thingDefs[ancestor::fixedIngredientFilter or not(li/text()="Owl_Iron")]
-          </xpath>
-          <value>
-            <li>DZ_Coal</li>
-          </value>
-        </li>
-      </operations>
-    </match>
-  </Operation>
-
-  <!--Charcoal-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Simple Chains: Steel</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <success>Always</success>
-      <operations>
-        <li Class="PatchOperationTest">
-          <xpath>/Defs/ThingDef[defName="DZ_Charcoal"]</xpath>
-        </li>
-        <li Class="PatchOperationAdd">
-          <xpath>/Defs/*[self::RecipeDef[defName="Owl_RefineSteel100" or defName="Owl_RefineSteel1000"]]
-					//thingDefs[ancestor::fixedIngredientFilter or not(li/text()="Owl_Iron")]
-          </xpath>
-          <value>
-            <li>DZ_Charcoal</li>
-          </value>
-        </li>
-      </operations>
-    </match>
-  </Operation>
-   <!--==========
-    Save Our Ship 2
-    ==========-->
-
-   <!--Increase pod launcher range-->
-   <Operation Class="PatchOperationFindMod">
-      <mods>
-         <li>Save Our Ship 2</li>
-      </mods>
-      <match Class="PatchOperationSequence">
-         <operations>
-            <li Class="PatchOperationReplace">
-               <xpath>/Defs/ThingDef[defName="PersonalShuttle"]/comps/li[@Class="CompProperties_Refuelable"]/fuelCapacity</xpath>
-               <value>
-                  <fuelCapacity>200.0</fuelCapacity>
-               </value>
-            </li>
-            <li Class="PatchOperationReplace">
-               <xpath>/Defs/ThingDef[defName="CargoShuttle"]/comps/li[@Class="CompProperties_Refuelable"]/fuelCapacity</xpath>
-               <value>
-                  <fuelCapacity>600.0</fuelCapacity>
-               </value>
-            </li>
-            <li Class="PatchOperationReplace">
-               <xpath>/Defs/ThingDef[defName="HeavyShuttle"]/comps/li[@Class="CompProperties_Refuelable"]/fuelCapacity</xpath>
-               <value>
-                  <fuelCapacity>300.0</fuelCapacity>
-               </value>
-            </li>
-         </operations>
-      </match>
-   </Operation>
-
-   <!--==========
     Vanilla Armour Expanded
     ==========-->
 
@@ -1076,54 +715,27 @@
     ==========-->
 
    <!--Balance tools: Hatchet, Pickaxe, Hammer, Shovel, Wrench, Cleaver (they should not be better than real weapons)-->
-   <Operation Class="PatchOperationSequence">
-      <success>Always</success>
-      <operations>
-         <li Class="PatchOperationReplace">
-            <xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Axe" or defName="VWE_MeleeWeapon_Pickaxe" or defName="VWE_MeleeWeapon_Hammer" or defName="VWE_MeleeWeapon_Shovel" or defName="VWE_MeleeWeapon_Wrench" or defName="VWE_MeleeWeapon_Cleaver"]/tools/li[label="blade" or label="point" or label="head"]/power</xpath>
-            <value>
-               <power>8</power>
-            </value>
-         </li>
-      </operations>
-   </Operation>
-
-   <!--==========
-    VGP Garden Gourmet
-    ==========-->
-
-   <!--Stuff items-->
-   <Operation Class="PatchOperationFindMod">
+   
+    <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Vanilla Weapons Expanded</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
       <mods>
-         <li>VGP Garden Gourmet</li>
+        <li>Combat Extended</li>
       </mods>
-      <match Class="PatchOperationSequence">
-         <success>Always</success>
-         <operations>
+      <nomatch Class="PatchOperationSequence">
+        <success>Always</success>
+        <operations>
             <li Class="PatchOperationReplace">
-               <xpath>/Defs/ThingDef[defName="HandCanningstove" or defName="Canningstove"]/costList</xpath>
-               <value>
-                  <costStuffCount>40</costStuffCount>
-                  <stuffCategories>
-                     <li>Metallic</li>
-                     <li>Woody</li>
-                     <li>Stony</li>
-                  </stuffCategories>
-               </value>
-            </li>
-            <li Class="PatchOperationReplace">
-               <xpath>/Defs/ThingDef[defName="FueledCandyTable" or defName="CandyTable"]/costList</xpath>
-               <value>
-                  <costStuffCount>60</costStuffCount>
-                  <stuffCategories>
-                     <li>Metallic</li>
-                     <li>Woody</li>
-                     <li>Stony</li>
-                  </stuffCategories>
-               </value>
-            </li>
-         </operations>
-      </match>
-   </Operation>
+			<xpath>/Defs/ThingDef[defName="VWE_MeleeWeapon_Axe" or defName="VWE_MeleeWeapon_Pickaxe" or defName="VWE_MeleeWeapon_Hammer" or defName="VWE_MeleeWeapon_Shovel" or defName="VWE_MeleeWeapon_Wrench" or defName="VWE_MeleeWeapon_Cleaver"]/tools/li[label="blade" or label="point" or label="head"]/power</xpath>
+				<value>
+					<power>8</power>
+				</value>
+			</li>
+        </operations>
+      </nomatch>
+    </match>
+	</Operation>
 
 </Patch>
