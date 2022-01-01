@@ -319,25 +319,6 @@
   </Operation>
 
   <!--==========
-    Extended Storage
-    ==========-->
-
-  <!--Put Extended Storage behind Complex Furniture Tech (excluding food basket and wooden pallet) -->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>Extended Storage (Continued</li>
-    </mods>
-    <match Class="PatchOperationAdd">
-      <xpath>/Defs/ThingDef[defName="Storage_HazMatContainer" or defName="Storage_FabricHamper" or defName="Storage_Locker" or defName="Storage_MedicineCabinet" or defName="Storage_Skip" or defName="Storage_TrayRack"]</xpath>
-      <value>
-        <researchPrerequisites>
-          <li>ComplexFurniture</li>
-        </researchPrerequisites>
-      </value>
-    </match>
-  </Operation>
-
-  <!--==========
     Fertile Fields [1.1]
     ==========-->
 
