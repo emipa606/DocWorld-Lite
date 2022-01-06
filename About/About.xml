@@ -1,5 +1,4 @@
 <ModMetaData>
-
 	<name>DocWorld Lite</name>
 	<author>Leugimimi</author>
 	<url>https://github.com/DrZhivago1/DocWorld</url>
@@ -8,30 +7,28 @@
 	</supportedVersions>
 	<packageId>docworld.lite</packageId>
 	<description>
-One of the most ambitious efforts to reorganize RimWorld/Mods into a cleaner, better functioning, and intuitive system. This mod patches, fixes, and adds content to many mods (including but not limited to plain old vanilla RimWorld). &lt;size=24&gt;Features&lt;/size&gt;
-    * Balances recipes for various items
-    * Enhances miniaturisation abilities
-    * Increased "stuffable" items
-    * Lights are now more efficient with power usage
-    * Greatly improves inter-mod compatibility
 	
-Each setting can now be disabled in the mod settings menu! Restart required for them to take effect.
+A fork of the ambitious mod Docworld, this mod is more modest, patching a few more than 100 mods and seeks to improve multi mod compatibility. The features are divided in 9 categories:
 
-[Link to Full Feature List]https://github.com/DrZhivago1/DocWorld/wiki/1.-Content-Overview
+- New biome foraged food types in caravans.
+- Beds require cloth (nullified by specialized bed mods).
+- More buildings can be minified, hand selected choices from Vanilla and Mods.
+- Glass lights actually requiring glass. Must use the Glass+Lights mod for the glass.
+- More linkable furniture support for various linkables where sensible.
+- More items can be stuffed.
+- Multi Mod Support that improves the compatibility and integration.
+- Changes to research prerequisites of some mods
+- Some misc changes that defy categorization.
+	
+Each setting can be disabled in the mod settings menu. Restart required for them to take effect.
 
-[Link to GitHub]https://github.com/DrZhivago1/DocWorld/releases
+[Link to Full Feature List]https://github.com/leugimimi/DocWorld-Lite/wiki/Mod-Features
 
-    
+[Link to GitHub]https://github.com/leugimimi/DocWorld-Lite
+
 	</description>
-
 	<modDependencies>
 	</modDependencies>
-
-	<incompatibleWith>
-		<li>Oreno.VFEFarming.DubsBadHygiene</li>
-		<li>dame.scleatherufpatch</li>
-	</incompatibleWith>
-
 	<loadAfter>
 		<li>cucumpear.storage</li>
 		<li>jamaicancastle.RF.fertilefields</li>
@@ -63,5 +60,4 @@ Each setting can now be disabled in the mod settings menu! Restart required for 
 		<li>wofl.MoreFurnitureUpdated</li>
 		<li>zymex.GloomyVanillaOverhaul</li>
 	</loadAfter>
-
 </ModMetaData>

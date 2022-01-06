@@ -318,7 +318,8 @@
   <!--==========
     Empire {Realistic Planets Continued}
     ==========-->
-
+	
+	<!--Biomes from Realistic Planets patched for Empire base location/production modifiers-->
   <Operation Class="PatchOperationFindMod">
     <mods>
       <li>Empire</li>
@@ -697,7 +698,7 @@
   <!--==========
     Extended Storage {Base, Rim Cuisine 2, Rim of Madness - Bones}
     ==========-->
-
+	<!--Adds Storage Settings filters for the mods involved.-->
   <!--Base-->
   <Operation Class="PatchOperationFindMod">
     <mods>
@@ -936,7 +937,6 @@
     </match>
   </Operation>
 
-  <!--Add recipes to stove furnace-->
   <!--Make Elven Candelabra refuelable with wax-->
   <Operation Class="PatchOperationFindMod">
     <mods>
@@ -984,28 +984,6 @@
             </value>
           </li>
         </operations>
-      </match>
-    </match>
-  </Operation>
-
-  <!--==========
-    More Planning {Circle And Oval}
-    ==========-->
-
-  <!--Move to planning designationCategory-->
-  <Operation Class="PatchOperationFindMod">
-    <mods>
-      <li>More Planning 1.3</li>
-    </mods>
-    <match Class="PatchOperationFindMod">
-      <mods>
-        <li>Circle And Oval</li>
-      </mods>
-      <match Class="PatchOperationReplace">
-        <xpath>/Defs/ThingDef[@Name="CAOBase"]/designationCategory</xpath>
-        <value>
-          <designationCategory>Planning</designationCategory>
-        </value>
       </match>
     </match>
   </Operation>

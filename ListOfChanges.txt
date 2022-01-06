@@ -96,7 +96,7 @@ I do not document every detail here, but you can get a good idea of which mods i
 		{Lamps require glass}
 
 ### Linkables:
-`This file will contain all linkable patches that allow furniture from various mods to utilize modded linkables, based on Vanilla counterparts.`
+`This file will contain all linkable patches that allow furniture from various mods to utilize modded linkables, based on Vanilla counterparts. The patch searches for buildings already using the vanilla linkables counterparts to ensure maximum compatibility.`
 
     Change Dresser
         {Vanilla EndTable support}
@@ -118,7 +118,7 @@ I do not document every detail here, but you can get a good idea of which mods i
 		{Vanilla VitalsMonitor support}
 
 ### Misc:
-`This file will contain all miscellaneous patches that replace/change all sorts of things from various mods.`
+`This file will contain all miscellaneous patches that replace/change all sorts of things from various mods and can't be easily categorized.`
 
     Vanilla
         {Add a melting mechanoid recipe for low tech colonies}
@@ -144,43 +144,69 @@ I do not document every detail here, but you can get a good idea of which mods i
 
     Ceramics VEF
         {Expanded Woodworking, Expanded Woodworking (Forked), Fertile Fields, Vanilla Furniture Expanded - Production}
+			<!--Add fiber recipe to woodworking tables from Expanded Woodworking-->
+			<!--Add most recipes to RockMill from FF-->
+			<!--Add most recipes to VFE-Production electric stonecutter-->
     Cupro's Stones
         {Simple Chains: Steel, RIMkea, MBS Faux Rock Wall}
+			<!--Chunks are buildable-->
+			<!-- FauxRockWall Use the same rock texture as Cupro's Stones-->
     Dubs Bad Hygiene
         {Fertile Fields, Fermenter, Fermenter (Continued)}
+			<!--Fermenting shit produces Fertile Fields fertilizer-->
     Empire
         {Realistic Planets Continued}
+			<!--Biomes from Realistic Planets patched for Empire base location/production modifiers-->
     Expanded Materials - Metals
         {Simple Chains: Lumber, VGP Garden Fabrics}
+			<!--Allow Tanning Liquor to use Logs instead of Lumber, trestle uses iron instead of steel-->
+			<!--loom uses iron instead of steel-->
     Expanded Woodworking, Expanded Woodworking
         {Simple Chains: Leather, Survivalist's Additions}
+			<!--Allow Tanning Liquor to use Logs instead of Lumber-->
+			<!--Enables building with the wood types from "Expanded Woodworking" on the buildings from "Survivalist's Additions".-->
     Extended Storage
         {Base, Rim Cuisine 2, Rim of Madness - Bones}
+			<!--Adds Storage Settings filters for the mods involved.-->
     Floored
         {Simply More Bridges (Continued)}
+			<!--Makes the bridges from Simply More Bridges match the floored tiled texture-->
     Harvest Organs Post Mortem
         {Alpha Animals, VGP Garden Medicine}
+			<!--Remove Alpha Animals Cactipine Quill from Harvest recipes-->
+			<!--Remove most VGP Garden Medicine from Harvest recipes-->
     Industrial Age - Objects and Furniture
         {VGP Garden Gourmet, Lord of the Rims - Dwarves, Lord of the Rims - Elves}
+			<!--Add recipes to stove furnace-->
+			<!--Make Dwarven Chandelier and Candelabra refuelable with wax-->
+			<!--Make Elven Candelabra refuelable with wax-->
     Medical Training
         {Thanks For All The Fish}
-    More Planning
-        {Circle And Oval}
+			<!--Remove Fish from training bench-->
     ReGrowth: Biomes of The Rim
         {Expanded Woodworking, Expanded Woodworking (Forked)}
+			<!--Change tree to produce proper logs-->
     Repair Workbench
         {[LC] Survival Tools}
+			<!--Add survival tools to repair workbench-->
     Smokeleaf Industry Reborn
         {Vanilla Brewing Expanded}
+			<!--Add to HempFlour to Whiskey production-->
     Standalone Hot Spring
         {Dubs Bad Hygiene}
+			<!--Change hotspring relaxation type-->
     Vanilla Furniture Expanded
         {Simple Chains: Leather, Fertile Fields}
+			<!--Allow corpse composting at stone campfire-->
+			<!--Allow tanning liquor to be made at stone campfire-->
     VGP Garden Fabrics / VGP Garden Fabrics Simplified
         {Vanilla Animals Expanded — Extreme Desert, Vanilla Animals Expanded — Tundra, Vanilla Factions Expanded - Vikings, [HLX] ReGrowth - Extinct Animals Pack}
+			<!--Add Camel wool to blended wool recipe-->
+			<!--Add Musk Ox wool to blended wool recipe-->
+			<!--Add Cow wool to blended wool recipe-->
 
 ### Research_Projects:
-`This file will contain all patches that replace/change research requirements for Vanilla and Mods.`
+`This file will contain all patches that replace/change research requirements for Vanilla and Mods, combining or reorganing.`
 	
     DDA Security and More
         {Doors Expanded}
@@ -237,7 +263,6 @@ Beds Need Bedding
 Ceiling Lights
 Ceramics VEF
 Change Dresser
-Circle And Oval
 Concrete Walls
 Cupro's Stones
 DDA Security and More
@@ -278,7 +303,6 @@ MendAndRecycle
 Metallic Batteries
 Modern Bed
 More Furniture (Continued)
-More Planning 1.3
 More Vanilla Biomes
 RIMkea
 Raise The Roof 1.3
