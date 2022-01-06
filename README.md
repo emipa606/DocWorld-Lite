@@ -1,8 +1,20 @@
 ========
-_DocWorld Lite - is a fork of the wonderfull Docworld mod. It is smaller in scope and more focused, as it doesn't do tab-sorting or original content, but focus on the mod integration and compatibility patches.
+A fork of the ambitious mod Docworld, this mod is more modest, patching a few more than 100 mods and seeks to improve multi mod compatibility. The features are divided in 9 categories:
+
+- New biome foraged food types in caravans.
+- Beds require cloth (nullified by specialized bed mods).
+- More buildings can be minified, hand selected choices from Vanilla and Mods.
+- Glass lights actually requiring glass. Must use the Glass+Lights mod for the glass.
+- More linkable furniture support for various linkables where sensible.
+- More items can be stuffed.
+- Multi Mod Support that improves the compatibility and integration.
+- Changes to research prerequisites of some mods
+- Some misc changes that defy categorization.
+	
+Each setting can be disabled in the mod settings menu. Restart required for them to take effect.
 
 ### Important Info:
-[DocWorld Wiki](https://github.com/DrZhivago1/DocWorld/wiki)
+[Link to Full Feature List](https://github.com/leugimimi/DocWorld-Lite/wiki/Mod-Features)
 For info on Mod Conflicts, Save Compatibility, and a Changelog.
 
 
