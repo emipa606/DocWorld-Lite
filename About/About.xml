@@ -1,14 +1,14 @@
 <ModMetaData>
 	<name>DocWorld Lite</name>
 	<author>Leugimimi</author>
-	<url>https://github.com/DrZhivago1/DocWorld</url>
+	<url>https://github.com/leugimimi/DocWorld-Lite</url>
 	<supportedVersions>
 		<li>1.3</li>
 	</supportedVersions>
 	<packageId>docworld.lite</packageId>
 	<description>
 	
-A fork of the ambitious mod Docworld, this mod is more modest, patching a few more than 100 mods and seeks to improve multi mod compatibility. The features are divided in 9 categories:
+A fork of the mod Docworld, this fork seeks to focus on Multi Mod Support, patching a few more than 100 mods. The features are divided in 9 categories:
 
 - New biome foraged food types in caravans.
 - Beds require cloth (nullified by specialized bed mods).
