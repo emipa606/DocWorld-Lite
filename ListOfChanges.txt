@@ -95,7 +95,6 @@ I do not document every detail here, but you can get a good idea of which mods i
 	Simple Utilities: Ceiling
 		{Lamps require glass}
 
-
 ### Linkables:
 `This file will contain all linkable patches that allow furniture from various mods to utilize modded linkables, based on Vanilla counterparts.`
 
@@ -123,26 +122,14 @@ I do not document every detail here, but you can get a good idea of which mods i
 
     Vanilla
         {Add a melting mechanoid recipe for low tech colonies}
-    Concrete Walls
-        {Use concrete from other mods}
     Expanded Roofing
         {Get rid of the annoying square shadows with glass roof}
-    Expanded Materials - Metals
-        {Return concrete flooring to normal}
-    Fish Industry
-        {Allow rotation of aquaculture basin (microfungus texture edited due to this), Stuff the pier}
     Fishing Nets
         {Increase fish spawn randomness, ensure minimum meat count per trap, and increase/further randomize the possible lifespan of all traps}
     Industrial Age - Objects and Furniture
         {Make gas lamps from require chemfuel}
-    Lulu's Bones and Chitin
-        {Bring Lulu's bones closer to Vanilla wood stats}
     Mamuffalo
         {Use Vanilla muffalo leather}
-    Open The Windows
-        {Allow regular windows to be made of stone}
-    Power Switch
-        {Remove hidden conduits}
     RIMkea
         {Nerf RIMkea furniture comfort and beauty}
     Rim of Madness - Bones
@@ -151,118 +138,67 @@ I do not document every detail here, but you can get a good idea of which mods i
         {Minor edits, allow cover}
 	SeedsPlease
 		{Healroot recipes onto production benches}
-	Simple Chains: Leather
-		{Increase Max Capacity of tanning vat, Vanilla animal leather replacement}
-    Simple Chains: Lumber
-        {Make green lumber stats in-line with Vanilla lumber}
-	Simple Chains: Steel
-		{Create Bulk Recipes for steel, Add coal/charcoal to steel smelting list}
-	Save Our Ship 2
-		{Increase pod launcher range}
-    Vanilla Armour Expanded
-        {Allow armor to be made of woody stuff}
-    Vanilla Factions Expanded - Medieval
-        {Allow armor to be made of woody stuff}
-    Vanilla Weapons Expanded
-        {Balance tools: Hatchet, Pickaxe, Hammer, Shovel, Wrench, Cleaver (they should not be better than real weapons)}
-    VGP Garden Gourmet
-        {Stuff items}
 
 ### Multi_Mod_Support:
 `This file will contain all patches that replace/change items based off whether or not multiple mods are loaded.`
 
-    Ceramics
-        {Expanded Woodworking, Fertile Fields, Vanilla Furniture Expanded - Production}
-    Coal Expanded
-        {Simple Chains: Lumber}
+    Ceramics VEF
+        {Expanded Woodworking, 
+Expanded Woodworking (Forked), Fertile Fields, Vanilla Furniture Expanded - Production}
     Cupro's Stones
-        {Simple Chains: Steel, RIMkea, MBS Faux Rock Wall, Simply More Bridges}
-    DDA Security and More
-        {Doors Expanded}
+        {Simple Chains: Steel, RIMkea, MBS Faux Rock Wall}
     Dubs Bad Hygiene
-        {Apothecary (Continued), Vanilla Furniture Expanded - Farming, Fertile Fields, Fermenter, Fermenter (Continued)}
+        {Fertile Fields, Fermenter, Fermenter (Continued)}
     Empire
         {Realistic Planets - Fan Update}
     Expanded Materials - Metals
         {Simple Chains: Lumber, VGP Garden Fabrics}
-    Expanded Woodworking
+    Expanded Woodworking, Expanded Woodworking
         {Simple Chains: Leather, Survivalist's Additions}
     Extended Storage
         {Base, Rim Cuisine 2, Rim of Madness - Bones}
-    Fertile Fields
-        {Vanilla Plants Expanded}
     Floored
         {Simply More Bridges (Continued)}
-    Glass+Lights
-        {Raise The Roof, Rimatomics}
-    Gloomy Vanilla Overhaul
-        {Gloomy Extra - Kitchen}
     Harvest Organs Post Mortem
         {Alpha Animals, VGP Garden Medicine}
     Industrial Age - Objects and Furniture
-        {VGP Garden Gourmet, Lord of the Rims - Dwarves (Continued), Lord of the Rims - Elves (Continued), Vanilla Furniture Expanded}
-    Lulu's Bones and Chitin
-        {Simple Chains: Lumber, Vanilla Factions Expanded - Insectoids}
+        {VGP Garden Gourmet, Lord of the Rims - Dwarves, Lord of the Rims - Elves}
     Medical Training
         {Thanks For All The Fish}
     More Planning
         {Circle And Oval}
-    [T] MoreFloors
-        {Stuffed Floors}
-    Project RimFactory Revived
-        {LWM's Deep Storage}
     ReGrowth: Biomes of The Rim
-        {Expanded Woodworking}
+        {Expanded Woodworking, Expanded Woodworking (Forked)}
     Repair Workbench
         {[LC] Survival Tools}
-    Rimatomics
-        {Vanilla Furniture Expanded - Power, Sparkling Worlds - Full Mod, Sparkling Worlds - Modular Core - Reduced features}
-    RIMkea
-        {Stuffed Floors}
-    RimOverhaul
-        {Simple Chains: Leather}
-    Simple Chains: Leather
-        {[SYR] Universal Fermenter, Vanilla Animals Expanded — Arid Shrubland, Vanilla Animals Expanded — Desert, Vanilla Animals Expanded — Ice Sheet, Vanilla Animals Expanded — Tropical Rainforest, Vanilla Factions Expanded - Vikings}
-    Simple Chains: Lumber
-        {Vanilla Furniture Expanded}
-	Simply More Bridges (Continued)
-        {Roads of the Rim, Roads of the Rim (Continued), Simple Concrete, Industrialisation}
-    Slightly More Realistic Wool Production Revived
-        {[HLX] ReGrowth - Extinct Animals Pack, Vanilla Animals Expanded — Extreme Desert, Vanilla Animals Expanded — Tundra, Vanilla Factions Expanded - Vikings}
     Smokeleaf Industry Reborn
         {Vanilla Brewing Expanded}
     Standalone Hot Spring
         {Dubs Bad Hygiene}
-    UN-Colony
-        {Industrialisation}
-    Vanilla Armour Expanded
-        {Dragons Not Included, NightVision}
-    Vanilla Factions Expanded - Medieval
-        {Dragons Not Included, Medieval Madness: Tools of the Trade}
-    Vanilla Factions Expanded - Vikings
-        {Dragons Not Included}
     Vanilla Furniture Expanded
-        {Simple Chains: Leather, Misc. Training, Combat Training, Fertile Fields}
-    Vanilla Furniture Expanded - Production
-        {Apothecary (Continued), Medical System Expansion - Revived, Smokeleaf Industry Reborn, What the hack?!}
-    Vanilla Furniture Expanded - Spacer Module
-        {[WD] Reinforced Doors}
-    Vanilla Weapons Expanded
-        {Dragons Not Included}
+        {Simple Chains: Leather, Fertile Fields}
     VGP Garden Fabrics / VGP Garden Fabrics Simplified
-        {Vanilla Animals Expanded — Extreme Desert, Vanilla Animals Expanded — Tundra, Vanilla Factions Expanded - Vikings, [HLX] ReGrowth - Extinct Animals Pack, Vanilla Animals Overhaul Reloaded, MendAndRecycle, SeedsPlease}
-    ZARS Production Spots
-        {Thanks For All The Fish}
+        {Vanilla Animals Expanded — Extreme Desert, Vanilla Animals Expanded — Tundra, Vanilla Factions Expanded - Vikings, [HLX] ReGrowth - Extinct Animals Pack}
 
 ### Research_Projects:
 `This file will contain all patches that replace/change research requirements for Vanilla and Mods.`
-
-    Aquarium (Continued)
-        {Allow you to feed your pet fish in Medieval era}
-    Dragons Not Included
-        {Change armor research}
-    Extended Storage
-        {Put Extended Storage behind Complex Furniture Tech (excluding food basket and wooden pallet)}
+	
+    DDA Security and More
+        {Doors Expanded}
+    Glass+Lights
+        {Raise The Roof}
+    Vanilla Armour Expanded
+        {[O21] Dragons Not Included}
+    Vanilla Factions Expanded - Medieval
+        {[O21] Dragons Not Included, Medieval Madness: Tools of the Trade}
+	Vanilla Factions Expanded - Vikings
+		{[O21] Dragons Not Included, Change armor research}
+	Vanilla Furniture Expanded - Spacer Module
+		{[WD] Reinforced Doors}
+	Vanilla Weapons Expanded
+		{[O21] Dragons Not Included}
+	[O21] Dragons Not Included
+		{change armor research}
     Fertile Fields [1.1]
         {Allow all terraforming in Medieval era}
     Glass+Lights
@@ -287,45 +223,35 @@ I do not document every detail here, but you can get a good idea of which mods i
 
     Vanilla
         {Vent, Butcher Table, Tool Cabinet}
+    VGP Garden Gourmet
+        {Stuff items}
+    Fish Industry
+        {Stuff the pier}
 
 
 *******
 # Supported Mods in RimWorld 1.3
 *******
 ```
-Advanced Polyamory Beds
 Alpha Animals
-Alpha Biomes
-Animal Medical Bed
-Apothecary
 Apothecary (Continued)
-Aquarium (Continued)
-Architect Expanded - Fences
-Atlas Materials
-CTS - Complete Tech Solutions (Continued)
 Ceiling Lights
-Ceramics
+Ceramics VEF
 Change Dresser
-Charcoal
 Circle And Oval
-Clutter Structures
-Coal Expanded
-Colony Leadership
-Combat Training
 Concrete Walls
 Cupro's Stones
 DDA Security and More
-DeCore
-Door Mat
+Doors Expanded
 Doors Expanded (Dev)
-Dragon's Descent
 Dubs Bad Hygiene
 Dubs Skylights
 Empire
 Expanded Materials - Metals
 Expanded Roofing
 Expanded Woodworking
-Extended Storage
+Expanded Woodworking (Forked)
+Extended Storage (Continued)
 Extended Storage Extended
 Extended Woodworking
 Fantastic Decor
@@ -370,9 +296,8 @@ LED Lights
 LWM's Deep Storage
 Large Animal Beds
 Larger Solar Panels
-Lord of the Rims - Dwarves (Continued)
-Lord of the Rims - Elves (Continued)
-Lulu's Bones and Chitin
+Lord of the Rims - Dwarves
+Lord of the Rims - Elves
 MBS Faux Rock Wall
 Mechalit Core
 Medical Supplements
@@ -408,7 +333,7 @@ Primitive Storage
 Project RimFactory Revived
 Questionable Ethics Enhanced
 RIMkea
-Raise The Roof 1.2
+Raise The Roof 1.3
 ReGrowth: Biomes of The Rim - Boreal Expansion
 ReGrowth: Biomes of The Rim - Tundra Expansion
 ReGrowth: Biomes of The Rim - Wasteland

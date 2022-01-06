@@ -35,9 +35,8 @@
     </match>
   </Operation>
   
-  
   <!--==========
-    Glass+Lights {Vanilla Furniture Expanded - Spacer Module, Raise The Roof, Rimatomics}
+    Glass+Lights {Raise The Roof}
     ==========-->
 
   <!--Allow transparent roofing to be research after glassworks-->
@@ -70,7 +69,6 @@
       </match>
     </match>
   </Operation>
-  
   
   <!--==========
     Vanilla Armour Expanded {Dragons Not Included}
@@ -187,7 +185,6 @@
       </match>
     </match>
   </Operation>
-  
   
   <!--==========
     Vanilla Furniture Expanded - Spacer Module {[WD] Reinforced Doors}
