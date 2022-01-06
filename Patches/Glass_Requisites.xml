@@ -19,13 +19,6 @@
                         <LargeCircularGlass>1</LargeCircularGlass>
                     </value>
                 </li>
-                <!--Minor grammar correction-->
-                <li Class="PatchOperationReplace">
-                    <xpath>/Defs/ThingDef[defName="OutdoorGroundLamp"]/label</xpath>
-                    <value>
-                        <label>outdoor ground lamp</label>
-                    </value>
-                </li>
                 <li Class="PatchOperationReplace">
                     <xpath>/Defs/ThingDef[@Name="GLWallLightBase"]/costList</xpath>
                     <value>
