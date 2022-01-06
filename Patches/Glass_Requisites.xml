@@ -341,7 +341,6 @@
         </mods>
         <match Class="PatchOperationFindMod">
             <mods>
-                <li>RimPlas</li>
                 <li>RimPlas (Continued)</li>
             </mods>
             <match Class="PatchOperationSequence">

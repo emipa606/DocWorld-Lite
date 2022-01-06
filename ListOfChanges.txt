@@ -20,7 +20,7 @@ I do not document every detail here, but you can get a good idea of which mods i
         {LotRE_PlantLembas(LotRE_MallornForest)}
     More Vanilla Biomes
         {VCE_RawCherry(ZBiome_AlpineMeadow), VCE_RawPlum(ZBiome_CloudForest), VCE_RawPricklyPear(ZBiome_DesertOasis), VCE_RawApple(ZBiome_Grasslands), VCE_RawPeach(ZBiome_Marsh)}
-    Realistic Planets - Fan Update
+    Realistic Planets Continued
         {VCE_Bearberry(RRP_Steppes/RRP_Permafrost), VCE_RawPeach(RRP_Savanna), VCE_RawPricklyPear(RRP_TemperateDesert/RRP_Oasis), VCE_RawApple(RRP_Grassland)}
     RimUniverse - Biomes
         {VCE_Bearberry(Permafrost), VCE_RawApple(Grassland), VCE_RawPeach(Savanna), VCE_RawBanana(MoistDeciduousForest)}
@@ -44,7 +44,7 @@ I do not document every detail here, but you can get a good idea of which mods i
         {WindPump}
     Genetic Rim
         {GR_CryostabilizedEngine}
-    RimPlas
+    RimPlas (Continued)
         {RPGrapheneSolarGenerator, RPGrapheneWindTurbine}
     Smokeleaf Industry Reborn
         {HempSolarGenerator, HempolineGenerator}
@@ -76,7 +76,7 @@ I do not document every detail here, but you can get a good idea of which mods i
         {Transparent roofs require glass}
     RIMkea
         {Kageshain lamps require glass}
-    Rimplas, RimPlas (Continued)
+    RimPlas (Continued)
         {CeilingLights require glass}
     Smokeleaf Industry Reborn
         {GrowLamps require glass}
@@ -134,7 +134,7 @@ I do not document every detail here, but you can get a good idea of which mods i
         {Nerf RIMkea furniture comfort and beauty}
     Rim of Madness - Bones
         {Wall nerf by 50 hitpoints}
-    Roof Support
+    Roof Support 1.3
         {Minor edits, allow cover}
 	SeedsPlease
 		{Healroot recipes onto production benches}
@@ -143,14 +143,13 @@ I do not document every detail here, but you can get a good idea of which mods i
 `This file will contain all patches that replace/change items based off whether or not multiple mods are loaded.`
 
     Ceramics VEF
-        {Expanded Woodworking, 
-Expanded Woodworking (Forked), Fertile Fields, Vanilla Furniture Expanded - Production}
+        {Expanded Woodworking, Expanded Woodworking (Forked), Fertile Fields, Vanilla Furniture Expanded - Production}
     Cupro's Stones
         {Simple Chains: Steel, RIMkea, MBS Faux Rock Wall}
     Dubs Bad Hygiene
         {Fertile Fields, Fermenter, Fermenter (Continued)}
     Empire
-        {Realistic Planets - Fan Update}
+        {Realistic Planets Continued}
     Expanded Materials - Metals
         {Simple Chains: Lumber, VGP Garden Fabrics}
     Expanded Woodworking, Expanded Woodworking
@@ -228,13 +227,13 @@ Expanded Woodworking (Forked), Fertile Fields, Vanilla Furniture Expanded - Prod
     Fish Industry
         {Stuff the pier}
 
-
 *******
 # Supported Mods in RimWorld 1.3
 *******
 ```
 Alpha Animals
 Apothecary (Continued)
+Beds Need Bedding
 Ceiling Lights
 Ceramics VEF
 Change Dresser
@@ -252,196 +251,90 @@ Expanded Roofing
 Expanded Woodworking
 Expanded Woodworking (Forked)
 Extended Storage (Continued)
-Extended Storage Extended
-Extended Woodworking
-Fantastic Decor
-Fast regen 1.1
-Fences And Floors
-Fences And Floors (Continued)
-Fences And No Floors
 Fermenter
 Fermenter (Continued)
 Fertile Fields
 Fish Industry
-Fishing Industry
 Fishing Nets
-Floor Lights
 Floored
 Genetic Rim
-Geyser Cooker
-Give up your building
 Glass+Lights
 Glitter Tech
 Glitter Tech (No Surgery)
-Glitter Tech {No Surgery}
-Gloomy Extra - Kitchen
 Gloomy Furniture
-Gloomy Vanilla
-Gloomy Vanilla Overhaul
 GloomyFurniture
-Glowstone
 Harvest Organs Post Mortem
-High Density Hydroponics
 High Tech Laboratory Facilities (Continued)
 Industrial Age - Objects and Furniture (Continued)
 Industrial Rollers
-Industrialisation
-Insulation
-Insulation (Continued)
-Invisible Animal Beds
-JetPack
-JetPack (Continued)
-Jurassic Rimworld
-LED Lights
-LWM's Deep Storage
-Large Animal Beds
-Larger Solar Panels
 Lord of the Rims - Dwarves
 Lord of the Rims - Elves
 MBS Faux Rock Wall
-Mechalit Core
-Medical Supplements
-Medical Supplements (Continued)
+Medical IV's
 Medical System Expansion - Revived
 Medical Training
-Medieval - Vanilla
 Medieval Medicines
 MendAndRecycle
 Metallic Batteries
-Misc. Training
-Mitz's Chicken Coop Mod
-More Furniture [1.1 + 1.2]
-More Hydroponics
-More Linkables
-More Planning
+Modern Bed
+More Furniture (Continued)
+More Planning 1.3
 More Vanilla Biomes
-NPDTiers - The Nutrient Paste Expansion Mod (Continued)
-Natural Lakes
-Natural Paths
-Neon Rim: The Rimworld Signs Pack
-NightVision
-Open The Windows
-Outdoor Lighting
-Over-Wall Nutrient Paste Dispenser
-Plant Growing Wall Light
-Polyamory Beds
-Polyamory Beds (Vanilla Edition)
-Power Switch
-Preemptive Strike
-Preemptive Strike (Fork)
-Primitive Storage
-Project RimFactory Revived
-Questionable Ethics Enhanced
 RIMkea
 Raise The Roof 1.3
 ReGrowth: Biomes of The Rim - Boreal Expansion
 ReGrowth: Biomes of The Rim - Tundra Expansion
 ReGrowth: Biomes of The Rim - Wasteland
-Realistic Planets - Fan Update
-RedistHeat
-Remote Tech
+Realistic Planets Continued
 Repair Workbench
-Replace Stuff
-Revia Race
 Rim Cuisine 2
 Rim of Madness - Bones
-RimBees
-RimFridge
-RimJobWorld
-RimOverhaul
-RimPlas
 RimPlas (Continued)
 RimWriter
 Rimatomics
-Rimefeller
-Rimoleum
-Rimoleum (Continued)
-Roads of the Rim
-Roof Support
+Roof Support 1.3
 RoofBomb
-Save Our Ship 2
-Science Never Stops: Ambition of the Cosmic
 SeedsPlease
 Simple Chains: Leather
 Simple Chains: Lumber
 Simple Chains: Steel
-Simple Coal
-Simple Concrete
-Simply More Bridges
 Simply More Bridges (Continued)
-Slightly More Realistic Wool Production Revived
-Smarter Vanilla Food
+Simple Utilities: Ceiling
 Smoked meat
 Smokeleaf Industry Reborn
 Sparkling Worlds - Full Mod
 Sparkling Worlds - Modular Core - Reduced features
 Standalone Hot Spring
 Static Quality Plus
-Steam Light
-Storage Solutions
-Stuffed Floors
 Survival Meals Expanded
-Survivalist Additions
 Survivalist's Additions
 Thanks For All The Fish
-Training Rack
 UN-Colony (Continued)
-Utility Columns
-VFE-Production
-VGP Garden Canning
-VGP Garden Drinks
+UN-Colony 1.2
 VGP Garden Fabrics
 VGP Garden Fabrics Simplified
 VGP Garden Gourmet
 VGP Garden Medicine
-VGP Garden Tools
-VGP Soylent Production
-VGP Vegetable Garden
-Vanilla Animals Expanded — Arid Shrubland
-Vanilla Animals Expanded — Desert
 Vanilla Animals Expanded — Extreme Desert
-Vanilla Animals Expanded — Ice Sheet
-Vanilla Animals Expanded — Tropical Rainforest
 Vanilla Animals Expanded — Tundra
-Vanilla Animals Overhaul Reloaded
 Vanilla Armour Expanded
-Vanilla Books Expanded
 Vanilla Brewing Expanded
-Vanilla Brewing Expanded - Coffees and Teas
 Vanilla Cooking Expanded
-Vanilla Cooking Expanded - Stews
-Vanilla Cooking Expanded - Sushi
 Vanilla Factions Expanded - Medieval
 Vanilla Factions Expanded - Settlers
 Vanilla Factions Expanded - Vikings
 Vanilla Furniture Expanded
-Vanilla Furniture Expanded - Farming
 Vanilla Furniture Expanded - Medical Module
 Vanilla Furniture Expanded - Power
 Vanilla Furniture Expanded - Production
-Vanilla Furniture Expanded - Props and Decor
-Vanilla Furniture Expanded - Security
 Vanilla Furniture Expanded - Spacer Module
 Vanilla Plants Expanded
-Velcroboy's Japanese Revival
 Wall Light
-Wall Sun Lamp
 Wall Vitals Monitor
 What The Hack
-ZARS Production Spots
-Zen Garden
-[D] Thermodynamics - Hot Meals
-[ELIF] Flooring and Decorative Options
-[JDS] Simple Storage
 [JPT] Soft Warm Beds
 [LC] Survival Tools
 [O21] Dragons Not Included
-[RF] Fishing
-[SYR] Doormats
-[T] MoreFloors
-[WD] Fueled Heaters
+[T] MoreBedsCloth
 [WD] Reinforced Doors
-[sd] Chicken Nest (Continued)
-[sd] Goodnight (Continued)
-【1.1】Animalstrawbed
 ```
