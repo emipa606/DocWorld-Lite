@@ -30,6 +30,17 @@
          </li>
       </operations>
    </Operation>
+   
+   <Operation Class="PatchOperationSequence">
+        <success>Always</success>
+            <li Class="PatchOperationReplace">
+                <xpath>/Defs/ThingDef[defName="SunLamp"]/comps[@Class="CompProperties_Power"]/shortCircuitInRain</xpath>
+                <value>
+                    <shortCircuitInRain>false</shortCircuitInRain>
+                </value>
+            </li>
+        </operations>
+    </Operation>
 
    <!--==========
     Expanded Roofing

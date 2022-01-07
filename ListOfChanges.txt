@@ -121,7 +121,7 @@ I do not document every detail here, but you can get a good idea of which mods i
 `This file will contain all miscellaneous patches that replace/change all sorts of things from various mods and can't be easily categorized.`
 
     Vanilla
-        {Add a melting mechanoid recipe for low tech colonies}
+        {Add a melting mechanoid recipe for low tech colonies, Sun Lamp doesn't short circuit in the rain}
     Expanded Roofing
         {Get rid of the annoying square shadows with glass roof}
     Fishing Nets
