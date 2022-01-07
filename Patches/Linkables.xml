@@ -355,7 +355,11 @@
         </match>
     </Operation>
 	
-	<!--Medical IV patch 11/28 --> 
+	<!--==========
+    Medical Iv's {Vanilla VitalsMonitor support}
+    ==========-->
+	
+	<!--Medical IV patch  --> 
 	<Operation Class="PatchOperationFindMod">
         <mods>
             <li>Medical IV's</li>
