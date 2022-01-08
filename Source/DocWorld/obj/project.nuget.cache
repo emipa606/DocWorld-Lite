@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Bk448B/uQtFWNQo4J701kZAjJXY4VpRhBPGW1E+gjZtpVlVoJg4W4gv2plU5THdqjKEAHj4jZed7RpxTZQ8fgA==",
+  "success": true,
+  "projectFilePath": "E:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\DocWorld-Lite\\Source\\DocWorld\\DocWorldLite.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\inade\\.nuget\\packages\\krafs.rimworld.ref\\1.3.3200\\krafs.rimworld.ref.1.3.3200.nupkg.sha512"
+  ],
+  "logs": []
+}

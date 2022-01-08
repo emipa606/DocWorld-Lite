@@ -1,0 +1,6 @@
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\DocWorld-Lite\Assemblies\DocWorldLite.dll
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\DocWorld-Lite\Source\DocWorld\obj\Release\DocWorldLite.GeneratedMSBuildEditorConfig.editorconfig
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\DocWorld-Lite\Source\DocWorld\obj\Release\DocWorldLite.AssemblyInfoInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\DocWorld-Lite\Source\DocWorld\obj\Release\DocWorldLite.AssemblyInfo.cs
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\DocWorld-Lite\Source\DocWorld\obj\Release\DocWorldLite.csproj.CoreCompileInputs.cache
+E:\SteamLibrary\steamapps\common\RimWorld\Mods\DocWorld-Lite\Source\DocWorld\obj\Release\DocWorldLite.dll
